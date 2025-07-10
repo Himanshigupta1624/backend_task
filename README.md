@@ -32,7 +32,7 @@ A Django application for managing email campaigns and subscribers with asynchron
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/email-manager.git 
+git clone https://github.com/Himanshigupta1624/backend_task.git
 - cd email-manager
 2. Create a virtual environment:
 ```
@@ -54,7 +54,12 @@ pip install -r requirements.txt
 ```
 
 5. Create a `.env` file in the project root:
-```EMAIL_HOST=smtp.mailgun.org EMAIL_PORT=587 EMAIL_HOST_USER=your_mailgun_user EMAIL_HOST_PASSWORD=your_mailgun_password DEFAULT_FROM_EMAIL=your_from_email```
+```EMAIL_HOST=smtp.mailgun.org EMAIL_PORT=587
+ EMAIL_HOST_USER=your_mailgun_user
+ EMAIL_HOST_PASSWORD=your_mailgun_password
+DEFAULT_FROM_EMAIL=your_from_email
+```
+
 6. Run migrations:
 ```
 python manage.py migrate
