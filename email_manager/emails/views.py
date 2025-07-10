@@ -12,8 +12,12 @@ def subscribe_form(request):# subscription form
 
 
 @csrf_exempt
-@require_http_methods(["POST"]) #Subscribe a new user to the email list
+@require_http_methods(["GET","POST"]) #Subscribe a new user to the email list
 def subscribe(request):
+   if request.method=="GET":
+       return render(request,'subscribe.html') 
+   else:
+       
     try:
         data = json.loads(request.body)
         email = data.get('email')
