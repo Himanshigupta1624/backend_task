@@ -1,0 +1,17 @@
+venv
+.env
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Python
+__pycache__/

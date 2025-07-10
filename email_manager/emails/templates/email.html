@@ -1,0 +1,17 @@
+<!-- email_template.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ subject }}</title>
+</head>
+<body>
+    <h1>Hello {{ first_name }},</h1>
+    <p>{{ preview_text }}</p>
+    <p>Read more: <a href="{{ article_url }}">Article</a></p>
+    <div>
+        {{ html_content|safe }}
+    </div>
+</body>
+</html>
